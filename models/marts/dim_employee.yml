@@ -1,0 +1,61 @@
+version: 2
+
+models: 
+  - name: dim_employee 
+    columns:
+      - name: employee_sk
+        description: Primary key for Employee records. This test is used to evaluate if the customer_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: loginid
+        description: Network login.
+
+      - name: nationalidnumber
+        description: Unique national identification number such as a social security number.
+
+      - name: jobtitle
+        description: Work title such as Buyer or Sales Representative.
+
+      - name: organizationnode
+        description: Where the employee is located in corporate hierarchy.
+
+      - name: firstname
+        description: First name of the person.
+
+      - name: middlename
+        description: Middle name or middle initial of the person.
+
+      - name: lastname
+        description: Last name of the person.
+      
+      - name: title
+        description: A courtesy title. For example, Mr. or Ms.
+
+      - name: hiredate
+        description: Employee hired on this date.
+
+      - name: gender
+        description: M = Male, F = Female
+
+      - name: birthdate
+        description: Date of birth.
+
+      - name: currentflag
+        description: 0 = Inactive, 1 = Active
+
+      - name: salariedflag
+        description: Job classification. 0 = Hourly, not exempt from collective bargaining. 1 = Salaried, exempt from collective bargaining.
+      
+      - name: maritalstatus
+        description: M = Married, S = Single
+
+      - name: vacationhours
+        description: Number of available vacation hours.
+
+      - name: sickleavehours
+        description: Number of available sick leave hours.
+
+      - name: modifieddate
+        description: Modification date.

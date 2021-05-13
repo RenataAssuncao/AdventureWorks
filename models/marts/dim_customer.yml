@@ -1,0 +1,34 @@
+version: 2
+
+models: 
+  - name: dim_customer 
+    columns:
+      - name: customer_sk
+        description: Primary key for Customer records. This test is used to evaluate if the customer_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: firstname
+        description: First name of the person.
+
+      - name: middlename
+        description: Middle name or middle initial of the person.
+
+      - name: lastname
+        description: Last name of the person.
+
+      - name: title
+        description: A courtesy title. For example, Mr. or Ms.
+
+      - name: region_name
+        description: Sales territory description.
+
+      - name: countryregioncode
+        description: ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+
+      - name: group_region_name
+        description: Geographic area to which the sales territory belong.
+
+      - name: modifieddate
+        description: Modification date.

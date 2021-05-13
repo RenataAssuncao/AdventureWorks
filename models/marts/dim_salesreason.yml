@@ -1,0 +1,19 @@
+version: 2
+
+models: 
+  - name: dim_salesreason 
+    columns:
+      - name: salesreason_sk
+        description: Primary key for SalesReason records. This test is used to evaluate if the customer_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: name
+        description: Sales reason description.
+
+      - name: reasontype
+        description: Category the sales reason belongs to.
+
+      - name: modifieddate
+        description: Modification date.

@@ -1,0 +1,37 @@
+version: 2
+
+models: 
+  - name: dim_specialoffer 
+    columns:
+      - name: specialoffer_sk
+        description: Primary key for SpecialOffer records. This test is used to evaluate if the customer_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: type
+        description: Discount type category.
+
+      - name: category
+        description: Group the discount applies to such as Reseller or Customer.
+
+      - name: discountpct
+        description: Discount precentage.
+
+      - name: startdate
+        description: Discount start date.
+
+      - name: enddate
+        description: Discount end date.
+
+      - name: minqty
+        description: Minimum discount percent allowed.
+          
+      - name: maxqty
+        description: Maximum discount percent allowed.
+
+      - name: description
+        description: Discount description.
+
+      - name: modifieddate
+        description: Modification date.

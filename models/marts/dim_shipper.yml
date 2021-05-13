@@ -1,0 +1,32 @@
+
+version: 2
+
+models: 
+  - name: dim_shipper 
+    columns:
+      - name: address_sk
+        description: Primary key for Address records. This test is used to evaluate if the customer_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: addressline1
+        description: First street address line.
+
+      - name: addressline2
+        description: Second street address line.
+
+      - name: postalcode
+        description: Postal code for the street address.
+
+      - name: city
+        description: Name of the city.
+
+      - name: province_name
+        description: State or province description.
+
+      - name: country_name
+        description: Country or region name.
+
+      - name: modifieddate
+        description: Modification date.

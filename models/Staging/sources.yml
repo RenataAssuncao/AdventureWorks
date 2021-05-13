@@ -1,0 +1,43 @@
+
+version: 2
+
+sources:
+  - name: adventureworkselt
+    description: This is the data source of our database, imported through Stitch
+    tables:
+      - name: address
+        description: This table contains street address information for customers, employees, and vendors.
+      - name: countryregion
+        description: Lookup table containing the ISO standard codes for countries and regions.
+      - name: creditcard
+        description: Customer credit card information.  
+      - name: currency
+        description: Lookup table containing standard ISO currencies.
+      - name: currencyrate
+        description: Currency exchange rates.
+      - name: customer
+        description: Current customer information. Also see the Person and Store tables.
+      - name: employee
+        description: Employee information such as salary, department, and title. 
+      - name: person
+        description: Human beings involved with AdventureWorks; employees, customer contacts, and vendor contacts.
+      - name: product
+        description: Products sold or used in the manfacturing of sold products.
+      - name: salesorderdetail
+        description: Individual products associated with a specific sales order. See SalesOrderHeader.  
+      - name: salesorderheader
+        description: General sales order information.
+      - name: salesorderheadersalesreason
+        description: Cross-reference table mapping sales orders to sales reason codes.
+      - name: salesperson
+        description: Sales representative current information. 
+      - name: salesreason
+        description: Lookup table of customer purchase reasons.
+      - name: salesterritory
+        description: Sales territory lookup table.     
+      - name: specialoffer
+        description: Sale discounts lookup table.  
+      - name: specialofferproduct
+        description: Cross-reference table mapping products to special offer discounts.
+      - name: stateprovince
+        description: This table contains state and province lookup table.
